@@ -16,10 +16,10 @@ plugins:
 minima:
   skin: auto
   social_links:
-  - title: fynnomenon on discord
-    icon: discord
-    url: "https://discordapp.com/users/504720288752205827"
-  - title: fynnomenon on X
-    icon: x-twitter
-    url: "https://x.com/fynn_61"
+    - title: fynnomenon on discord
+      icon: discord
+      url: "https://discordapp.com/users/504720288752205827"
+    - title: fynnomenon on X
+      icon: x-twitter
+      url: "https://x.com/fynn_61"
   hide_site_feed_link: true
