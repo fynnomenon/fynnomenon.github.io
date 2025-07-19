@@ -8,7 +8,7 @@ date:   2025-07-19
 
 Haven't we all been in these meetings that seem to go on forever without achieving anything in the end? Picture a mandatory team meeting with far too many participants, each delivering lengthy updates about stuff that's not remotely related to your work.
 
-Given this frustration, it's hardly surprising that more and more people are sending AI notetakers to meetings, rather than showing up themselves. There are already dozens of anecdotes of someone joining a meeting where these AI bots outnumbered the human participants. In some of these stories, the attendee was even the only human in a meeting *invaded* by AI notetakers. While this will undoubtedly remain a rare case, there is no denying that AI notetakers are rapidly becoming an unavoidable fixture in our daily working lives.
+Given this frustration, it's hardly surprising that more and more people are sending AI notetakers to meetings, rather than showing up themselves. A recent [Washington Post article](https://www.washingtonpost.com/technology/2025/07/02/ai-note-takers-meetings-bots/) recounts scenes of people joining a meeting where these AI bots outnumbered the human participants. In some of these stories, the attendee was even the only human in a meeting *invaded* by AI notetakers. While this will undoubtedly remain a rare case, there is no denying that AI notetakers are rapidly becoming an unavoidable fixture in our daily working lives.
 
 {% include youtubePlayer.html id="wB1X4o-MV6o" %}
 
