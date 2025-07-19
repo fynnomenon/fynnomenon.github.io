@@ -2,6 +2,7 @@
 title: A fynnomenal blog
 author:
   name: fynnomenon
+  email: fynn753@gmail.com
 description: >- 
   A fynnomenal blog about AI stuff, I guess?
 
@@ -13,7 +14,7 @@ plugins:
 
 # Minima-specific settings (applicable to Minima v3 and above only)
 minima:
-  skin: auto
+  skin: classic
   social_links:
     - title: fynnomenon on discord
       icon: discord
@@ -21,4 +22,4 @@ minima:
     - title: fynnomenon on X
       icon: x-twitter
       url: "https://x.com/fynn_61"
-  hide_site_feed_link: true
+  hide_site_feed_link: false
