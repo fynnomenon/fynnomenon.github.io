@@ -4,8 +4,6 @@ title:  "I created a digital twin of myself that joins low-value meetings for me
 date:   2025-07-19 
 ---
 
-![meeting meme](/fynnomenon.github.io/docs/assets/no_work_done.png)
-
 ## The rise of AI notetakers
 
 Haven't we all been in these meetings that seem to go on forever without achieving anything in the end? Picture a mandatory team meeting with far too many participants, each delivering lengthy updates about stuff that's not remotely related to your work.
@@ -40,7 +38,7 @@ I was genuinely impressed by how well the model captured the unique features of 
 
 The next step involved fine-tuning an LLM to respond in my tone and style. Fortunately, OpenAI's [Direct Preference Optimization (DPO)](https://platform.openai.com/docs/guides/direct-preference-optimization) method made this simple. It allows you to fine-tune models based on preferred and non-preferred example responses to specific prompts.
 
-To create the necessary training dataset (about $100$ examples formatted as a `JSONL` file are already enough), I *of course* avoided any manual work! Instead, I fed my YouTube transcripts to ChatGPT, letting it extract statements I made and generate prompts that would naturally lead to them, along with typical ChatGPT responses for comparison.
+To create the necessary training dataset (about 100 examples formatted as a `JSONL` file are already enough), I *of course* avoided any manual work! Instead, I fed my YouTube transcripts to ChatGPT, letting it extract statements I made and generate prompts that would naturally lead to them, along with typical ChatGPT responses for comparison.
 
 After preparing my dataset, I just needed to click myself through the web-based GUI of the OpenAI platform to start the fine-tuning process. I uploaded my `JSONL` file to the OpenAI platform, selected `gpt-4.1-2025-04-14`as the base model, and hit the "Create" Button. Soon after, my new personalized model was ready. The final step was to fetch the `Output model` name from the dashboard because it is the identifier we'll later use with the OpenAI API.
 
@@ -90,7 +88,7 @@ Now, my thoughts on digital twins compared to AI notetakers: Having a digital tw
 
 Additionally, employees are more likely to see the Linear issue created by their digital twin during a meeting than to read about it in an AI notetaker's summary email. However, this could easily lead to even more follow-up questions because you completely lack context about how the issue was created.
 
-This also opens up new problems that could call into question the value of decisions made in meetings attended by digital twins. Picture this: If my digital twin says in the meeting that I can do all $42$ urgent bug fixes by tomorrow because my calendar is free, do I really have to? *Better not.*
+This also opens up new problems that could completely call into question the value of decisions made in meetings attended by digital twins. Picture this: If my digital twin says in the meeting that I can do all 42 urgent bug fixes by tomorrow because my calendar is free, do I really have to? *Better not.*
 
 In conclusion, digital twins seem useful for people who want to skip long, boring meetings where, for example, they only need to say one sentence that could easily be answered by looking something up on a specific Notion page. However, in meetings where lively discussions happen and actual decisions are made, digital twins may have the potential to disrupt the flow of the meeting even more than AI notetakers and cause a lot of chaos afterward.
 
