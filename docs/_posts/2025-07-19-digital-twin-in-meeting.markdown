@@ -4,6 +4,8 @@ title:  "I created a digital twin of myself that joins low-value meetings for me
 date:   2025-07-19 
 ---
 
+![meeting meme](/fynnomenon.github.io/docs/assets/logo.png)
+
 ## The rise of AI notetakers
 
 Haven't we all been in these meetings that seem to go on forever without achieving anything in the end? Picture a mandatory team meeting with far too many participants, each delivering lengthy updates about stuff that's not remotely related to your work.
@@ -20,7 +22,7 @@ Sure, the AI bots send their users a summary email after the meeting so that the
 
 On the other hand, it's not unusual for people to join a meeting and never turn on their camera or microphone, probably playing some handy game on the side and not actually contributing anything to the meeting. But they can at least be called on to participate. An AI notetaker can't. *Let's fix that!*
 
-## Why digital twins will be next
+## Why digital twins will be next 
 
 For AI bots to truly represent a person absent from a meeting, they must actively participate by answering questions, providing TL;DR's, and offering suggestions, effectively becoming a *"digital twin"* of that person. This would mean integrating it deeply with the person's work tools (like Linear, Notion, GitHub, etc.), which isn't that hard these days, thanks to the hype around MCP servers. With that, your digital twin should theoretically already be equipped to deliver your stand-up in your next team meeting.
 
@@ -50,7 +52,7 @@ The easiest way to equip an AI agent with such skills is through the Model Conte
 
 So, now I only needed to worry about how I could get the agent into a video conference. Enter [joinly](https://github.com/joinly-ai/joinly), an open-source project I'm currently working on with two friends: It is a connector middleware specifically designed to enable AI agents to actively participate in video calls. How does it work? Ultimately, joinly is also just an MCP server that you can host yourself, providing your agent with essential meeting tools (such as `speak_text` and `send_chat_message`) alongside automatic real-time transcription.
 
-Joinly already provides a `client_example.py` so that you don't need to write your agent from scratch. However, to make the agent understand that it is a bot acting on my behalf, I had to tinker with the system prompt of the agent a bit. In the end, it came down to adding this line
+Joinly already provides a `client_example.py` so that you don't need to write your agent from scratch. However, to make the agent understand that it is acting on my behalf, I had to tinker with its system prompt a bit. In the end, it came down to adding this line
 
 > "You are Hannes-Bot, a meeting agent that impersonates the real employee Hannes and acts on their behalf in the meeting."
 
@@ -82,7 +84,7 @@ I was amazed at how easy it was to create an interactive digital twin of myself 
 
 I will talk about the why in a second. But first, I want to discuss the implementation a bit: In hindsight, fine-tuning an entire personalized model seems very excessive. The same effect could probably be achieved by using few-shot prompting and providing the model with phrases you often use in meetings as context.
 
-However, I would argue that it's questionable whether you really need your digital twin to mimic your voice and style anyway. It's pretty cool to be able to talk to it yourself, but it's probably just creepy for your colleagues and a waste on people who don't know you. Also, these fine-tuning methods are mostly only available via closed-source vendors, which forces you to use them when you could otherwise opt for the privacy-preserving alternative of using self-hosted LLMs and STT models.
+However, I would argue that it's questionable whether you really need your digital twin to mimic your voice and style anyway. It's pretty cool to be able to talk to it yourself, but it's probably just creepy for your colleagues and a waste on people who don't know you. Also, these fine-tuning methods are primarily available through closed-source vendors, forcing you to use them instead of the privacy-preserving alternative of using self-hosted LLMs and STT models.
 
 Now, my thoughts on digital twins compared to AI notetakers: Having a digital twin in a meeting instead of an AI notetaker would definitely improve the experience for the organizer. For example, they could ask the bot what the employee who sent said bot is currently working on, or even request it to find that one specific value buried in a spreadsheet created by that employee yesterday. For the employee, this would mean fewer follow-up messages after the meeting.
 
