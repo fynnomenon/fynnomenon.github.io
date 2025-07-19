@@ -2,12 +2,11 @@
 title: A fynnomenal blog
 author:
   name: fynnomenon
-  email: fynn753@gmail.com
 description: >- 
   A fynnomenal blog about AI stuff, I guess?
 
 # Build settings
-theme: minima
+remote_theme: "jekyll/minima@1e8a445"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
