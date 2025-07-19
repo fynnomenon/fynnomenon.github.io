@@ -4,7 +4,7 @@ title:  "I created a digital twin of myself that joins low-value meetings for me
 date:   2025-07-19 
 ---
 
-![meeting meme](/fynnomenon.github.io/docs/assets/logo.png)
+![meeting meme](/fynnomenon.github.io/docs/assets/no_work_done.png)
 
 ## The rise of AI notetakers
 
