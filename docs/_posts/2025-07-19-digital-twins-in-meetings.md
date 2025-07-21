@@ -56,7 +56,7 @@ Joinly already provides a `client_example.py` so that you don't need to write yo
 
 and describing my personality, especially how I act in meetings. Very hard to come up with something non-generic there. *Did you know that I am very proactive in meetings and try to set and work toward clear, predefined goals?* 
 
-Lastly, you need to provide a `mcp_conig.json` file, where you list the MCP servers your AI meeting agent should connect to. For the demo video you can see below, I just added the Linear MCP Server. 
+Lastly, you need to provide a `mcp_config.json` file, where you list the MCP servers your AI meeting agent should connect to. For the demo video you can see below, I just added the Linear MCP Server. 
 
 Now, the time had finally come to send my digital twin to a meeting. All that was left was to spin up the joinly MCP server and specify my personalized LLM and voice replica.
 
