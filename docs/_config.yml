@@ -2,6 +2,7 @@
 title: A fynnomenal blog
 description: >- 
   A fynnomenal blog about AI stuff, I guess?
+permalink: /:title/
 
 # Build settings
 remote_theme: "jekyll/minima@1e8a445"
@@ -20,3 +21,11 @@ minima:
       icon: x-twitter
       url: "https://x.com/fynn_61"
   hide_site_feed_link: false
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
